@@ -1,7 +1,7 @@
 package Dec31
 
 
-  class Cricketer(val age:Int,val name:String)
+  case class Cricketer(val age:Int,val name:String)
 
   object Main extends App{
 
@@ -16,6 +16,7 @@ package Dec31
     println(cricketer.eq(cricketer2))
 
     println(cricketer==cricketer2)
+    println()
 
   }
 

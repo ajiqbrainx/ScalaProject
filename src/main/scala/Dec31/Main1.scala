@@ -1,27 +1,25 @@
 package Dec31
 
 
-  object Main1 extends App{
+object Main1 extends App {
 
-    val a:PartialFunction[Int,Int]={
+  val a: PartialFunction[Int, Int] = {
 
-      case x if x %2==0=>10*x
+    case x if x % 2 == 0 => 10 * x
 
-    }
-
-
-
-    val r:PartialFunction[Int,Int]={
-
-      case x if x !=0=>10*x
-
-    }
+  }
 
 
+  val r: PartialFunction[Int, Int] = {
 
-    val res=a andThen  r
+    case x if x != 0 => 10 * x
 
-    println(res(10))
+  }
+
+
+  val res = a andThen r
+
+  println(res(10))
 
 
 }
