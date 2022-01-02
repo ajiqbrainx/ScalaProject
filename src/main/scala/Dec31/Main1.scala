@@ -7,6 +7,7 @@ object Main1 extends App {
 
     case x if x % 2 == 0 => 10 * x
 
+      
   }
 
 
