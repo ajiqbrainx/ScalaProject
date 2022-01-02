@@ -1,7 +1,7 @@
 package Dec31
 
 
-  case class Cricketer(val age:Int,val name:String)
+  class Cricketer(val age:Int,val name:String)
 
   object Main extends App{
 
