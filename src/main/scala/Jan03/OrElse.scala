@@ -1,4 +1,4 @@
-package Jan02
+package Jan03
 
 object OrElse extends App {
   val m: PartialFunction[Int, Int] = {
@@ -12,9 +12,9 @@ object OrElse extends App {
     case y if (y % 10) == 0 => y * 10
   }
   println("^^^^^^^^^^^^")
-println(s(10))
+  println(s(10))
   val r = M orElse m
-  val t=M orElse s
+  val t = M orElse s
   println(r(5))
   println(r(4))
   println("&&&&&&&&&&&")

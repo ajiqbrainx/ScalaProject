@@ -1,4 +1,4 @@
-package Jan02
+package Jan03
 
 object Collect extends App {
   val M: PartialFunction[Int, Int] = {
