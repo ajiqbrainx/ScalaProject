@@ -13,6 +13,13 @@ object ArraySameFirstLastCheck extends App {
 
   println("**************")
   val index = Array("Ajith", "Ashok", "Abi", "Akil", "Aji")
-  println(index.indexOf("Ajith "))
-
+//  println(index.indexOf("Ajith "))
+  for (x<- index){
+   println(x)
+  }
+  index(2)=""
+  index(3)=null
+  for (x<- index){
+    println(x)
+  }
 }
