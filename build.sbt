@@ -6,3 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     name := "Scala Projects"
   )
+
+// https://mvnrepository.com/artifact/io.spray/spray-json
+libraryDependencies += "io.spray" %% "spray-json" % "1.3.6"
+
+
