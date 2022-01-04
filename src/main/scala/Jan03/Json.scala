@@ -25,4 +25,5 @@ implicit val cal: RootJsonFormat[Student] =jsonFormat2(Student)
 //
 //  println(a)
 
+
 }
