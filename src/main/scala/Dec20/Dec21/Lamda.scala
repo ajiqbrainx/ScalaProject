@@ -1,4 +1,4 @@
-package Dec21
+package Dec20.Dec21
 
 object Lamda extends App {
   def ss(a: Int, b: Double)(c: String)(d: Boolean) = a + b + c + d

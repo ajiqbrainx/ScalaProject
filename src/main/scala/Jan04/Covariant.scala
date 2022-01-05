@@ -3,13 +3,19 @@ package Jan04
 
 object Covariant extends App {
 
-  trait A
+  trait A{
+    println("A")
+  }
 
-  trait A1 extends A
+  trait A1 extends A{
+    println("A1")
+  }
 
-  trait A2 extends A
+  trait A2 extends A{
+    println("A2")
+  }
 
-  class B[+T](val name: T)
+  class B[T](val name: T)
 
   val a: A = new A {}
   val a1: A1 = new A1 {}
