@@ -21,4 +21,6 @@ object ListAndExample extends App {
 println("*************Empty List************")
 val emptylist =List()
   println(emptylist.isEmpty)
+  println("*********Map  ******")
+  println("Map to the list"+list1.map(_*2))
 }
