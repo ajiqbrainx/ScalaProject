@@ -1,18 +1,18 @@
 package Jan10
 
+import javax.security.sasl.Sasl
+
 object ThreadEx extends App{
-
-
-  val array=List.fill(4000)(1)
-//  println(array)
+  
   for (i <- 1 to 100) {
     val thread = new Thread {
       override def run {
-        // your custom behavior here
+        println(Thread.currentThread().getName)
       }
     }
     thread.start
     Thread.sleep(50) // slow the loop down a bit
+
   }
 
 }
