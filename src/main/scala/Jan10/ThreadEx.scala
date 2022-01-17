@@ -11,7 +11,7 @@ object ThreadEx extends App{
       }
     }
     thread.start
-    Thread.sleep(50) // slow the loop down a bit
+   Thread.sleep(50) // slow the loop down a bit
 
   }
 

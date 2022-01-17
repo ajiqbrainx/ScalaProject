@@ -18,9 +18,9 @@ object RunnableAndThread extends App {
   val thread = new Thread(new ThreadEx, "Thread1")
   thread.start()
 
-
   val runnable = new Thread(new RunnableEx,"Runnable1")
   runnable.start()
+  Thread.sleep(100)
 
 val multi = for(i<- 1 to 5){
   val thread1=new Thread(new ThreadEx())

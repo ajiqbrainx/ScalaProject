@@ -1,6 +1,8 @@
 package Jan10
 
 object Synchronized extends App {
+
+
   println(Thread.currentThread().getName)
 
 
@@ -10,10 +12,12 @@ object Synchronized extends App {
       Thread.sleep(100)
     }
   }
+
   new Thread(runnable, "Thread 1").start()
+  Thread.sleep(100)
   new Thread(runnable, "Thread 2").start()
 
-//  println(Thread.currentThread().getName)
+  println(Thread.currentThread().getName)
 
 
 }

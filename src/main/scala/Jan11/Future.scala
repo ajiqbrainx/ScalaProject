@@ -11,8 +11,9 @@ object Future1 extends App {
   val future = Future {
     Thread.sleep(50)
     println(Thread.currentThread().getName)
-    24/0
+    24/4
   }
+
   println(future.value)
   println("&&&&&&&&&&&&")
   future1(future)
@@ -21,8 +22,9 @@ object Future1 extends App {
   future1(future)
 println("&&&&&&&&&&&&&")
   println(future.value)
+//Thread.sleep(50)
 
-
+println(Thread.currentThread().getName)
 
   def future1[T](input:Future[T])=input.value match {
     case None=>println("No value")

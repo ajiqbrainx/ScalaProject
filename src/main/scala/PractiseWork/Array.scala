@@ -1,25 +1,24 @@
 package PractiseWork
 
+import scala.{+:, :+}
 
-object GFG
-{
 
-  def main(args: Array[String]) {
-    var name = Array("gfg", "geeks", "GeeksQuize",
-      "geeksforgeeks")
+object GFG extends App{
 
-    println("second element of an array is: ")
+println("*********** ******")
+    var list1 = Array(1, 2,3, 4, 5, 6)
 
-    //    println(name(1) )
-    for (i <- name) {
-      println(i)
+   for (i <- list1) {
+      print(i+ " ")
     }
-
-
-    var list1 = Array(1, 23, 4, 5, 5, 6, 6)
-    for (i <- list1) {
-
-println(i*i)
+    println()
+    val ss= list1.tail :+ list1.head
+    for (i <- ss ) {
+      print(i+" ")
     }
+    println()
+  val ss1=ss.tail :+ ss.head
+  for (i <- ss1) {
+    print(i+" ")
   }
 }
