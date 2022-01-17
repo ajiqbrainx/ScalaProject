@@ -9,11 +9,11 @@ object Future1 extends App {
   println(Thread.currentThread().getName)
 
   val future: Future[Int] = Future {
-    Thread.sleep(50)
+//    Thread.sleep(50)
     println(Thread.currentThread().getName)
     24/4
   }
-
+//Thread.sleep(100)
   println(future.value)
   println("&&&&&&&&&&&&")
   future1(future)
