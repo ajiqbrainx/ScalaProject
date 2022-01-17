@@ -3,15 +3,13 @@ package Jan05
 
   object Covariant extends App {
 
-    trait A{
-      println("Parent")
-    }
+    trait A
 
     trait AChild extends A
     trait AChild1 extends A
 
 
-    class B[T](val data: T)
+    class B[+T](val data: T)
 
     val a: A = new A{}
     val a1: AChild = new AChild{}
@@ -26,8 +24,8 @@ package Jan05
     }
 
     print(b)
-//    print(b1)
-//    print(b2)
+    print(b1)
+    print(b2)
 
 
 }

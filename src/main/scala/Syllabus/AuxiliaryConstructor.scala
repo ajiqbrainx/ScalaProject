@@ -27,6 +27,7 @@ class AuxiliaryEx(Name: String, Age: Int) {
     println("Percentage is = " + perc + "%")
   }
   def this(Name: String, Age: Int, Std: Int, Mark1: Int, Mark2: Int, Mark3: Int) = {
+    //First we calling the primary constructor
     this(Name, Age)
     this.std = Std
     this.mark1 = Mark1
