@@ -5,7 +5,7 @@ import javax.security.sasl.Sasl
 object ThreadEx extends App{
   
   for (i <- 1 to 100) {
-    val thread = new Thread {
+    val thread= new Thread {
       override def run {
         println(Thread.currentThread().getName)
       }

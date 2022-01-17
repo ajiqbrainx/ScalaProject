@@ -8,7 +8,7 @@ object Future1 extends App {
 
   println(Thread.currentThread().getName)
 
-  val future = Future {
+  val future: Future[Int] = Future {
     Thread.sleep(50)
     println(Thread.currentThread().getName)
     24/4
