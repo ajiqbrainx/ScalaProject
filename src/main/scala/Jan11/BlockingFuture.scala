@@ -20,14 +20,14 @@ val future =Future{
     67
   }
 val ss=Await.ready(future,FiniteDuration(4,"seconds"))
-  val result=Await.ready(future,4 seconds)
-  val result1=Await.ready(future1,4 seconds)
+  val ready=Await.ready(future,4 seconds)
+  val ready1=Await.ready(future1,4 seconds)
   println("________4_____")
 
   println(future)
   println(future1)
 //  println(result)
-  println(result1)
+//  println(result1)
   Thread.sleep(5000)
   println(ss)
 

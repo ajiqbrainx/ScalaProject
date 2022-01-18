@@ -1,6 +1,8 @@
+package AAAAA
+
 import scala.concurrent.{ExecutionContext, Future}
 
-object Main extends App {
+object Parasitic extends App {
 
   implicit val ec: ExecutionContext = ParasiticExecutionContext
 
@@ -22,15 +24,15 @@ object Main extends App {
 
 
   Future {
-    println(Thread.currentThread().getName +"33")
+    println(Thread.currentThread().getName + "33")
   }
 
 
-  val ss =Future {
-    println(Thread.currentThread().getName +"$$")
-90
+  val ss = Future {
+    println(Thread.currentThread().getName + "$$")
+    90
   }
-val ss1=Future(67)
+  val ss1 = Future(67)
   println(Thread.currentThread().getName)
   println(ss)
   println(ss1)

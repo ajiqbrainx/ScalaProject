@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Others
 
 abstract class AbstractArguments(name1: String, Age1: Int) {
   def show

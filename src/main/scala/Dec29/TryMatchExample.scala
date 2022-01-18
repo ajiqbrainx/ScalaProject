@@ -9,7 +9,8 @@ object TryMatchExample extends App {
       {
         Success(x)
     }
-    else 0
+    else Failure(new Exception("It is not "))
   }
   println(name("Ajith"))
+  println(name(""))
 }

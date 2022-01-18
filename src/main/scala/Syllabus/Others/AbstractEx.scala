@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Others
 
 abstract class AbstractEx {
   def name //Abstract Method

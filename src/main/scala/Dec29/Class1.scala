@@ -12,10 +12,10 @@ class Class1 (val Age:Int,val Name:String) extends Product with Serializable
 //  override def equals(obj: Any): Boolean = {
 //    if (obj==null){
 //      false
-//    }else if(!obj.asInstanceOf[Class1]){
+//    }else if(!obj.asInstanceOf[AAAAA.Class1]){
 //      false
 //    }else{
-//      val Obj:Class1=obj.asInstanceOf[Class1]
+//      val Obj:AAAAA.Class1=obj.asInstanceOf[AAAAA.Class1]
 //      (this Name==Obj)
 //
 //    }

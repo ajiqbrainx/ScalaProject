@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Others
 
 object CompanionObject {
   private val name = "Ajith"

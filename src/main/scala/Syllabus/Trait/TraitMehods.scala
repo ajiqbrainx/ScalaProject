@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Trait
 
 trait TraitMehods {
   def abstractMethod // This is Abstract method

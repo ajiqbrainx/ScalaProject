@@ -1,3 +1,5 @@
+package AAAAA
+
 import scala.concurrent.ExecutionContext
 
 object ParasiticExecutionContext extends ExecutionContext {

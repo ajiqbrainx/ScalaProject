@@ -1,3 +1,5 @@
+package AAAAA
+
 object InvariantNote extends App {
 
   trait A
@@ -16,13 +18,12 @@ object InvariantNote extends App {
   val b1: B[AChild] = new B(a1)
   val b2: B[AChild1] = new B(a2)
 
-  def print(b:B[A]):Unit=
-  {
+  def print(b: B[A]): Unit = {
     println(b.data.toString)
   }
+
   println(b)
   println(b1)
   println(b2)
 
 }
-

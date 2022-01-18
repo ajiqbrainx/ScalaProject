@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Trait
 
 trait TraitFields {
   val name: String // Abstract Fields

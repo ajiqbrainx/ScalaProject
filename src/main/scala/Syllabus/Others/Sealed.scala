@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Others
 
 sealed trait Sealed {
   val Name: String

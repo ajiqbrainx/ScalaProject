@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Others
 
 object AuxiliaryConstructor extends App {
   val Aux = new AuxiliaryEx("Ajith", 23, 12, 67, 89, 89)

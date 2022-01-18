@@ -1,6 +1,6 @@
-package Syllabus
+package Syllabus.Others
 
-object ReferentialTransparency extends App{
+object ReferentialTransparency extends App {
 
   def sq(x: Int): Int = x * x
 
@@ -8,7 +8,8 @@ object ReferentialTransparency extends App{
     println(s"X is $x")
     x * x
   }
-println(sq(4))
+
+  println(sq(4))
   println(sq1(4))
-println(4*4)
+  println(4 * 4)
 }

@@ -1,4 +1,4 @@
-package Syllabus
+package Syllabus.Trait
 
 trait TraitMultiple {
   def name // Abstract method
