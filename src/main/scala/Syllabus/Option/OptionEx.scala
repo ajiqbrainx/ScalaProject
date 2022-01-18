@@ -8,5 +8,5 @@ object OptionEx extends App {
     else Some(a/b)
   }
 
-println(check(20,0))
+println(check(20,5))
 }

@@ -6,7 +6,7 @@ object TryExample extends App {
 
   val ss=Try(10/5)
   println(ss)
-  val jj=Try(10/0)
+  val jj=Try(null)
   println(jj)
 
 
