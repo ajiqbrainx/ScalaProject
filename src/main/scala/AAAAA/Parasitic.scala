@@ -13,23 +13,19 @@ object Parasitic extends App {
   println(Thread.currentThread().getName)
 
   Future {
-    println(Thread.currentThread().getName + "aJITH")
+    println(Thread.currentThread().getName + " aJITH ")
     34
   }
-
-
   Future {
-    println(Thread.currentThread().getName + "222")
+    println(Thread.currentThread().getName + " 222")
+    89
   }
-
-
   Future {
-    println(Thread.currentThread().getName + "33")
+    println(Thread.currentThread().getName + " 33")
+    90
   }
-
-
   val ss = Future {
-    println(Thread.currentThread().getName + "$$")
+    println(Thread.currentThread().getName + " $$")
     90
   }
   val ss1 = Future(67)
