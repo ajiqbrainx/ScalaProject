@@ -1,6 +1,6 @@
 package Syllabus.Trait
 
-trait TraitMehods {
+trait TraitMethods {
   def abstractMethod // This is Abstract method
 
   def nonAbstract(a: Int, b: Int): Int = a + b // This is Non-Abstract Method
@@ -8,7 +8,7 @@ trait TraitMehods {
   //why it because its already Implemented
 }
 
-class Example extends TraitMehods {
+class Example extends TraitMethods {
   def abstractMethod: Unit = println("This is extending trait ")
 
 }

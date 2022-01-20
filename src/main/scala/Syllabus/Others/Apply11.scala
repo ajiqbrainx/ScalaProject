@@ -1,6 +1,6 @@
 package Syllabus.Others
 
-import Syllabus.Others.Apply11.unapply
+import Apply11.unapply
 
 class Apply11(val a: Int, val b: Int) {
 

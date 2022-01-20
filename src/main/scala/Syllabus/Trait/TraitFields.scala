@@ -6,7 +6,7 @@ trait TraitFields {
 }
 
 class MyClass extends TraitFields {
-  //I'm overide to my abstract fields
+  //I'm override to my abstract fields
   override val name: String = "Ajith"
 
   def show(): Unit = {
