@@ -16,16 +16,19 @@ object TakeWhileDrop extends App {
   //  The given list2 in 5 Is greater than available
   //  so the condition is firstly wrong that's why its not taking value.
   println("******TAKE*****")
+  println(list)
   println(list.take(3))
   //It is takes number of elements
   println("*******Drop******")
+  println(list)
   println(list.drop(3))
   //Drop is opposite to take => It drop the element
 println("*******Take Right*******")
   println(list)
   println(list.takeRight(4))
 //  Take right is working on Right to we are taking values
-  println("*******Take Left*******")
+  println("*******Take Left*******Nothing in scala" +
+    "")
   println(list)
 
 
