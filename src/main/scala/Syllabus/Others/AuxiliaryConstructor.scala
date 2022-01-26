@@ -28,7 +28,9 @@ class AuxiliaryEx(Name: String, Age: Int) {
   }
   def this(Name: String, Age: Int, Std: Int, Mark1: Int, Mark2: Int, Mark3: Int) = {
     //First we calling the primary constructor
+
     this(Name, Age)
+    //Then I'm accessing Global Fields
     this.std = Std
     this.mark1 = Mark1
     this.mark2 = Mark2
