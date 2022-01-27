@@ -1,6 +1,6 @@
 package AAAAA
 
-object Ajith extends App {
+object PackageObject extends App {
 println(ajithashok)
   val s=1222
 }

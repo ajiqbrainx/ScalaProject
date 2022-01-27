@@ -1,6 +1,9 @@
 package Syllabus.Others
 
 import Apply11.unapply
+abstract class name(val a:Int){
+
+}
 
 class Apply11(val a: Int, val b: Int) {
 

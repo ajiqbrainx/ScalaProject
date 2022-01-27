@@ -1,7 +1,4 @@
-package AAAAA
-
-import AAAAA.GenericHigher.add
-
+package Syllabus.Generic
 
 object Generic extends App {
 
@@ -18,7 +15,7 @@ object Generic extends App {
 
     // Generic Using Def
 
-    def name[A, B](Name: A, Age: B): Unit = {
+    def name[A, B](Name: A, Age:A): Unit = {
       println("Your Name is = " + Name)
       println("Your Age is = " + Age)
     }
