@@ -1,4 +1,4 @@
-package Recursion
+package Syllabus.Recursion
 
 import scala.annotation.tailrec
 

@@ -1,4 +1,4 @@
-package Recursion
+package Syllabus.Recursion
 
 object Fiboncci extends App{
   def fib(n: Int): Int = {

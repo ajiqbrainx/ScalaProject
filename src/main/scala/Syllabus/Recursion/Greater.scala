@@ -1,4 +1,4 @@
-package Recursion
+package Syllabus.Recursion
 
 object Greater extends App{
   def isSorted[A](as: Array[A], ordering: (A, A) => Boolean): Boolean = {
