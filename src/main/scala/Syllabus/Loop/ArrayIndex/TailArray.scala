@@ -1,24 +1,10 @@
-package Syllabus.Recursion
+package Syllabus.Loop.ArrayIndex
 
-object ArrayIndexCheck extends App {
+object TailArray extends App {
 
-//
-//  var a = Array("Ajith", "Abi", "Aji")
-//  var index = 0
-//
-//  // loop execution
-//  while (index < a.length) {
-//    if (a(index) == "Aji")
-//      println("index of while is " + index)
-//    index = index + 1
-//  }
-//
-//
-//
 
   val a1 = Array("Ajith", "Abi", "Ashok", "Akon", "Akil")
   println(a1(2))
-
 
 
   def array(a: Array[String], Index: Int): Any = {
