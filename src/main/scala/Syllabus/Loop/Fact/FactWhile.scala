@@ -1,4 +1,4 @@
-package Syllabus.Loop
+package Syllabus.Loop.Fact
 
 object FactWhile extends App {
 

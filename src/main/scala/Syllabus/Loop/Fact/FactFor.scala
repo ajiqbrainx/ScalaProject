@@ -1,4 +1,4 @@
-package Syllabus.Loop
+package Syllabus.Loop.Fact
 
 object FactFor extends App {
 
@@ -7,7 +7,7 @@ object FactFor extends App {
   for (i <- 1 to n) {
 
     fact = fact * i
-//    println(mul)
+    //    println(mul)
   }
   println(fact)
 

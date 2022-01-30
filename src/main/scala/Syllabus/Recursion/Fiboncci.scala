@@ -9,6 +9,6 @@ object Fiboncci extends App{
     loop(n, 0, 1)
   }
 
-  println(fib(3))
+  println(fib(7))
 
 }
