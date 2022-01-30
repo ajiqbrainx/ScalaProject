@@ -7,7 +7,7 @@ case object Cat extends Animal
 case object Lion extends Animal
 case object Tiger extends Animal
 case object Cheetah extends Animal
-
+object Monkey extends Animal
 
 object Main extends App{
 
@@ -16,9 +16,11 @@ object Main extends App{
     case Dog => false
     case Cheetah => true
     case Lion => true
-    case _=>"It is not animal"
+    case Monkey => false
+//    case _=>"It is not animal"
   }
   println(wildAnimal(Cat))
   println(wildAnimal(Dog))
   println(wildAnimal(Lion))
+  println(wildAnimal(Cheetah))
 }
