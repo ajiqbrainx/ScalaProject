@@ -23,4 +23,9 @@ object Main extends App{
   println(wildAnimal(Dog))
   println(wildAnimal(Lion))
   println(wildAnimal(Cheetah))
+  println(wildAnimal(Monkey))
+
+
+  val a=Array("Ajith","Abi","Aji")
+  println(a(1))
 }

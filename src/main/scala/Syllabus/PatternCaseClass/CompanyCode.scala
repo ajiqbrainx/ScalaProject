@@ -1,6 +1,6 @@
 package Syllabus.PatternCaseClass
 
-abstract class CompanyCode
+ class CompanyCode
 
 case class ScalaCode(scala: String, php: String, developer: String) extends CompanyCode
 
@@ -8,13 +8,14 @@ case class JavaCode(java: String, reactJs: String, developer: String) extends Co
 
 case class PythonCode(python: String, angular: String, developer: String) extends CompanyCode
 
-
+case class D() extends CompanyCode
 object Main1 extends App{
 
   def codeCheck(a:CompanyCode): Unit ={
    a match {
      case ScalaCode(scala, php, _) => println(s"Your code is $scala and your using $php & Your Developer name is")
      case JavaCode(java, reactJs, developer) => println(s"Your code is $java and your using $reactJs & Your Developer name is $developer")
+     case D()=>
      case PythonCode(python, angular,developer) =>  println(s"Your code is $python and your using $angular & Your Developer name is $developer")
    }
   }
