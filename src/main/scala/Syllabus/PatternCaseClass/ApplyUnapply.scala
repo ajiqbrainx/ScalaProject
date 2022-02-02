@@ -8,13 +8,11 @@ object ApplyUnapply extends App {
   object Name {
     def apply(a: Int, b: Int): Name = new Name(a, b)
 
-    def unapply(arg: Name): Option[(Int, Int)] = Some(arg.a, arg.b)
+    def unapply(arg: Name): Option[(Int, Int)] = Option(arg.a, arg.b)
   }
 
   val obj = Name(1,2)
-  //  println(obj.a)
-  //  println(obj.b)
-  //println(obj+"Normal")
+
   obj match {
     case x: Name => println(x)
   }
@@ -23,8 +21,9 @@ object ApplyUnapply extends App {
   val Name(a, b) = obj
 
   s match {
-    case Some(value) =>println(value)
     case Some(value)=>println(a+b)
+    case Some(value) =>println(value)
+
 
 //    case None => println("None")
 //    case Name(1,2)=>println("Success")

@@ -9,7 +9,8 @@ object ForArray extends App {
 
   for (i <- 1 to b) {
 
-    if (a(index) == "Ashok") println(index)
+    if (a(index) == "Abi") println(index)
+//    else if (a(index)!="Abi") println(index)
     index = index + 1
   }
 

@@ -2,34 +2,41 @@ package Syllabus.PatternCaseClass
 
 object Obj extends App {
 
-  def a(a: Any): Unit = a match {
+  def a[T](a:T): Unit = a match {
 
-    case s: Int => println(s)
-    case r: String => println(r)
-    case d: Double => println(d)
-    case f: Boolean => println(f)
+    case s: Int => println("Int")
+    case r: String => println("String")
+    case d: Double => println("Double")
+    case f: Boolean => println("Boolean")
   }
 
   a(1)
   a("Ajith")
-}
+  a(23.4)
 
-sealed class A
 
-case class A1(name:String) extends A
+  def add[T,A](name:T,age:List[A])={
 
-class  A2 extends A
 
-class  A3 extends A
-
-object SS extends App{
-  def ss(a:A)={
-    a match {
-      case A1(name) =>println("A1")
-      case x:A2 => println("A2")
-      case x:A3 => println("A3")
-    }
   }
 }
+//
+//sealed class A
+//
+//case class A1(name:String) extends A
+//
+//class  A2 extends A
+//
+//class  A3 extends A
+//
+//object SS extends App{
+//  def ss(a:A)={
+//    a match {
+//      case A1(name) =>println("A1")
+//      case x:A2 => println("A2")
+//      case x:A3 => println("A3")
+//    }
+//  }
+//}
 
 

@@ -1,6 +1,6 @@
 package Syllabus.CaseNormal
 
-class Equality(val a: String, val b: Int) {
+class Equality(val A: String, val B: Int) {
   override def equals(obj: Any): Boolean =
     if (obj == null) {
       false
@@ -8,16 +8,21 @@ class Equality(val a: String, val b: Int) {
       false
     } else {
       val tempObj:  Equality = obj.asInstanceOf[ Equality]
-      (this.a == tempObj.a) && (this.b == tempObj.b)
+      (this.A == tempObj.A) && (this.B == tempObj.B)
     }
 }
 
 case class ClassEquality(a: String, b: Int)
 
-object Equality1 extends App {
+object Equality11 extends App {
   val equality = new Equality("Ajith", 2)
   val equality1 = new Equality("Ajith", 2)
   val equality2 = new Equality("Ashok", 3)
+  val ss=new Equality("Aji",1)
+  val ss1=new Equality("Aji",1)
+  println(ss==ss1)
+  println(ss.equals(ss1))
+  println("old")
   println(equality == equality1) //normal class can not access in equality //If you want to put override on your class
   println(equality1 == equality2) //normal class can not access in equality //If you want to put override on your class
   println(equality2 == equality)  //normal class can not access in equality //If you want to put override on your class
