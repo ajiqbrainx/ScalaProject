@@ -8,6 +8,8 @@ object NormalClass extends App {
 
   class Normal(val name: String, val age: Int) extends Product{
 
+    override def toString: String = s"$name $age"
+
     override def equals(obj: Any): Boolean = {
       if (obj == null) false
       else if (!obj.isInstanceOf[Normal]) false

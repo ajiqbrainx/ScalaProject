@@ -4,21 +4,22 @@ object Obj extends App {
 
   def a[T](a:T): Unit = a match {
 
-    case s: Int => println("Int")
-    case r: String => println("String")
-    case d: Double => println("Double")
-    case f: Boolean => println("Boolean")
+    case _: Int => println("Int")
+    case _: String => println("String")
+    case _: Double => println("Double")
+    case _: Boolean => println("Boolean")
   }
 
   a(1)
   a("Ajith")
   a(23.4)
+  a(true)
 
 
-  def add[T,A](name:T,age:List[A])={
 
 
-  }
+
+
 }
 //
 //sealed class A
