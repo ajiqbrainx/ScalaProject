@@ -14,4 +14,5 @@ object TailArraySize extends App {
 
   val b = Array("Ajith", "Ashok", "Abi", "aji")
   size(b, 0)
+  println(b.indexWhere(_=="Ashok"))
 }
